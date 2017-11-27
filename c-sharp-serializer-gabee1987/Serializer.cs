@@ -81,8 +81,8 @@ namespace c_sharp_serializer_gabee1987
         {
             string fileInfo = "person" + serialNumber + ".dat";
             string name = NameTextBox.Text;
-            string phoneNumber = PhoneTextBox.Text;
             string address = AddressTextBox.Text;
+            string phoneNumber = PhoneTextBox.Text;
             DateTime creationDate = DateTime.Now;
 
             Person personToSave = new Person(name, address, phoneNumber,  creationDate);
@@ -143,8 +143,8 @@ namespace c_sharp_serializer_gabee1987
             {
                 Person personToShow = Person.DeserializePerson(fileInfo);
                 string name = personToShow.Name;
-                string phoneNumber = personToShow.PhoneNumber;
                 string address = personToShow.Address;
+                string phoneNumber = personToShow.PhoneNumber;
                 DateTime creationDate = personToShow.CreationDate;
 
                 NameTextBox.Text = name;
@@ -157,6 +157,11 @@ namespace c_sharp_serializer_gabee1987
             {
                 Console.WriteLine(ne);
             }
+        }
+
+        public static int GetMaxSerialNumber()
+        {
+            return 0;
         }
 
         #endregion

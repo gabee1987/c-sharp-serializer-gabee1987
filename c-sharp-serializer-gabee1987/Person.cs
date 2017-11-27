@@ -34,18 +34,13 @@ namespace c_sharp_serializer_gabee1987
             this.Address = address;
             this.PhoneNumber = phoneNumber;
             this.CreationDate = creationDate;
-            SetSerialNumber();
+            this.serialNumber = serialNumberCounter;
             serialNumberCounter++;
         }
 
         #endregion
 
         #region Basic Methods
-
-        public void SetSerialNumber()
-        {
-            this.serialNumber = serialNumber + 1;
-        }
 
         public int GetSerialNumber()
         {
