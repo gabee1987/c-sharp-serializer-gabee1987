@@ -16,7 +16,7 @@ namespace c_sharp_serializer_gabee1987
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Serializer());
         }
     }
 }
